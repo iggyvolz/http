@@ -37,7 +37,7 @@ abstract class Message
             $size = \count($values);
 
             for ($i = 0; $i < $size; $i++) {
-                $headers[] = [$this->headerCase[$lcName][$i], $values[$i]];
+                $headers[] = [ucfirst($this->headerCase[$lcName][$i]), $values[$i]];
             }
         }
 
